@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 400;
+  src: url('http://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 700;
+  src: url('http://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 300;
+  src: url('http://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+}
+.lottemartdream * {
+ font-family: 'LotteMartDream', sans-serif;
+}
+
+body{
+
+  margin:0;
+}
+a{
+  color:black;
+  text-decoration : none;
+}
+p{
+  text-align:center;
+}
+li{
+  padding-bottom:20px;
+  font-size :14px
+}
+#welcomeLogo{
+  padding-top:20px;
+  text-align: center;
+  font-style:normal;
+  text-decoration-color: gray;
+  font-size:25px;
+}
+#grid{
+  display : grid;
+  grid-template-columns : 161px 1fr;
+  border-top : 1px solid gray;
+}
+#grid #leftgrid{
+  margin:0;
+  padding-top:20px; padding-right:30px; padding-left:30px; padding-bottom:460px;
+
+  background-color : #cce8f4;
+  list-style: none;
+
+}
+#grid #rightgrid{
+  margin:0;
+  padding-top:30px; padding-right:30px; padding-left:30px; padding-bottom:460px;
+  position: static;
+  top: 30%;
+  left: 30%;
+
+}
+#inputstyle{
+  margin: 10px;
+  border: 1px solid;
+  padding: 5px;
+  padding-left: 1px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#login_section{
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+}
+#login_button{
+  border: 1px solid skyblue;
+  background-color: rgba(0,0,0,0);
+  color: skyblue;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 15px;
+  width: 160px;
+}
+#login_button:hover{
+  background-color: skyblue;
+  color: white;
+}
+
+#header{
+  display: grid;
+  grid-auto-flow :column;
+  grid-template-columns: 1fr;
+}
+#header #login{
+  justify-content: space-between;
+  display :inline-block;
+  margin-bottom: 0; margin-top:70px; margin-right: 25px;
+  font-size : 15px;
+}
+#header #mainlogo{
+  padding:10px;
+  display:inline-block;
+}
+@media(max-width:500px){
+  #grid{
+    display: block;
+  }
+  #grid #welcomeImage{
+    image : none;
+  }
+  #grid #rightgrid{
+    background-image: none;
+    display:block;
+  }
+  #grid ol{
+    padding-bottom: 20px;
+    display: block;
+  }
+  #mainlogo{
+    border-bottom:none;
+  }
+  body{
+    background : white;
+  }
+}
